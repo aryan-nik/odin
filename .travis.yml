@@ -25,5 +25,5 @@ install:
   - pip3 install -U pip setuptools wheel cython
   - pip3 install -r requirements-dev.txt
   - pip3 install -e .
-script: py.test --cov=ocean ocean/tests
+script: py.test --cov=odin odin/tests
 after_success: travis_retry coveralls
